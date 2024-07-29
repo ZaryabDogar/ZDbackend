@@ -6,8 +6,11 @@ const port = 5000
 //connect to database
 connectToMongo();
 //cors policy
-// Use the CORS middleware
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
