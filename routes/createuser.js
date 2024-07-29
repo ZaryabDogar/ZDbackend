@@ -57,7 +57,7 @@ router.post(
       });
       await data.save();
 
-      const verificationUrl = `http://localhost:5000/api/verifyuser/${verificationToken}`;
+      const verificationUrl = `http://zd-backend.vercel.app/api/verifyuser/${verificationToken}`;
 
       // Email template with CSS
       const htmlEmail = `

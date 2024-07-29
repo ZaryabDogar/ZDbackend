@@ -16,7 +16,7 @@ router.get('/verifyuser/:token', async (req, res) => {
 
         User.isVerified = true;
         await User.save();
-        return res.redirect('http://localhost:3000/verification_success');
+        return res.redirect('https://zdfood.vercel.app/verification_success');
 
     } catch (error) {
         console.log('Error occurred: ' + error);
