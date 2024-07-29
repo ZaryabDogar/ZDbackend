@@ -34,7 +34,7 @@ router.post('/forgetpass', async (req, res) => {
       <p style="font-size: 16px; color: #555;">You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n
       Please click on the following link, or paste this into your browser to complete the process within one hour of receiving it:\n\n</p>
       <div style="text-align: center; margin: 20px 0;">
-        <a href=" http://localhost:3000/resetpassword/${token}" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007BFF; text-decoration: none; border-radius: 5px;">Reset Password</a>
+        <a href="https://zdfood.vercel.app/resetpassword/${token}" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007BFF; text-decoration: none; border-radius: 5px;">Reset Password</a>
       </div>
       <p style="font-size: 16px; color: #555;">   If you did not request this, please ignore this email and your password will remain unchanged.</p>
       <p style="font-size: 16px; color: #555;">Thanks,</p>
