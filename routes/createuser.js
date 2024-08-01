@@ -78,7 +78,7 @@ router.post(
 
       // Send verification email
       await transporter.sendMail({
-        from: 'your_email@gmail.com', // ensure this matches your email
+        from: 'check8737496@gmail.com', // ensure this matches your email
         to: email,
         subject: 'Verify your email',
         html: htmlEmail,
