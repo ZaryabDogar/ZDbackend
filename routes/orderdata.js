@@ -43,12 +43,12 @@ router.post('/orderdata', async (req, res) => {
       // Create a new order
       const newOrder = new Order({
         email,
-        orderdata: [{ orderNumber, items: orderdata }]
+        orderdata: [{ orderNumber, items: orderdata,  }]
       });
       await newOrder.save();
     } else {
       // Update the existing order without nesting arrays
-      existingOrder.orderdata.push({ orderNumber, items: orderdata,date:Date.now() });
+      existingOrder.orderdata.push({ orderNumber, items: orderdata,  });
       await existingOrder.save();
     }
 

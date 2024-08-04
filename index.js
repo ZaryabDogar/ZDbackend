@@ -27,6 +27,7 @@ const startServer = async () => {
     app.use('/api', require('./routes/forgetpass'));
     app.use('/api', require('./routes/resetpassword'));
     app.use('/api', require('./routes/orderdata'));
+    app.use('/api', require('./routes/myorder'));
 
     // Start the server
     app.listen(port, () => {
